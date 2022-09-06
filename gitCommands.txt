@@ -1,0 +1,52 @@
+git config --global user.name "Name"
+
+git config --global user.email "Email ID"
+
+git init 
+
+	ls-lart
+
+git status 
+
+git add index.html
+
+git commit  -> i to write -> then press escape, colon, w and q to come out of vim editor
+
+touch 'filename'
+
+git add -A (to track all)
+
+git commit -m "Message"
+
+clear (to clear terminal)
+
+git checkout (to recover the files) Match the directory with last commit
+
+git checkout -f (for all)
+
+git log (tells the log of all commits)
+
+git log -p -numberOfOutputsYouWantToSee
+
+git diff (to see the difference b/w files) (compares the working directory with staging area)
+
+git diff --staged (compares the staging area with last commit)
+
+git  commit -a -m "Message" (Used to directly commmit, avoiding the staging area)
+
+git rm filename (Deletes the file from both, working area and directory)
+
+git rm --cached filename (Deletes the file from staging area)
+
+touch .gitignore (used to create gitignore file)
+
+git branch 'name'  (create a new branch with the given name)
+
+git branch (to see what branch are you on)
+
+git checkout 'branchname' (to move to another branch)
+
+git merge 'branchname' (Used to merge the branches)
+
+git checkout -b 'branchname' (used to create a new branch and moving onto it)
+
