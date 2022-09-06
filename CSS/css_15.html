@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Responsive Web Design</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin: auto;
+            width: 65%;
+            border: 2px solid rgb(18, 18, 78);
+            /* padding: 0px 2rem; */
+            /* background-color: violet; */
+        }
+        
+        h1 {
+            margin-top: 0;
+            color: white;
+            padding: 2rem;
+            /* padding: 1.5em; */
+            background-color: rgb(18, 18, 78);
+        }
+
+        section#s1 {
+            width: 90%;
+            margin: auto;
+        }
+
+        section#s1 img{
+            margin: auto;
+            display: block;
+            max-width: 100%;
+        }
+
+        span.orange-text, h2 {
+            color: orangered;
+        }
+
+        section#s2 {
+            background-color: rgb(18, 18, 78);
+            padding: 2rem;
+            color: wheat;
+        }
+
+        button {
+            padding: 0.85rem 1.25rem;
+            border: none;
+        }
+
+        #btn1 {
+            background-color: orangered;
+            color: white;
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive Web Design -->
+    <!-- Relative Units, Flexbox, Media and Grid -->
+    <div class="container">
+        <h1>CSS is a lot of Fun</h1>
+        <section id="s1">
+            <h2>Section 1 Title</h2>
+            <img src="../../UI&Django230Course/back.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="orange-text"> Reprehenderit facilis repellendus</span> cumque similique laborum omnis dolorem accusantium odio sint obcaecati.</p>
+        </section>
+
+        <section id="s2">
+            <h2>Section 2 Title</h2>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dicta aperiam minus deserunt culpa, asperiores perferendis voluptatem quisquam. Aliquam, corporis!</p>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="orange-text"> Reprehenderit facilis repellendus</span> deserunt culpa, asperiores perferendis voluptatem quisquam. Aliquam, corporis!</p>
+
+            <div class="btns">
+                <button id="btn1">Contact Us</button>
+                <button id="btn2">More Info</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

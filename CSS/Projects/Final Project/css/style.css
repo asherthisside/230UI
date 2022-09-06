@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    transition: 0.5s;
+    --brown: rgb(28, 25, 20);
+    --btn-color: rgb(201, 158, 113);
+    --icon-color: rgb(123, 97, 72);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--brown);
+}
+
+.container {
+    /* height: 300px; */
+    width: 80%;
+    margin: auto;
+    /* border: solid white; */
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 1em 0;
+    height: 80px;
+    /* border: solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>.nav-links {
+    width: 40%;
+    display: flex;
+}
+
+nav>.right-links {
+    justify-content: flex-end;
+}
+
+
+nav ul li {
+    color: white;
+    display: inline-block;
+    padding: 0.5em 0.75em;
+}
+
+nav ul li:hover {
+    color: var(--icon-color);
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1) translateY(-0.35em);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+section#hero {
+    height: 70vh;
+    background-image: linear-gradient(rgb(123, 97, 72, 0.3) 65%, black), url('../images/hero-img-3-1.jpeg');
+    /* border: solid; */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section#hero .content {
+    color: white;
+    width: 35%;
+    /* border: solid; */
+    margin-left: 10%;
+}
+
+section#hero .content h1 {
+    font-size: 3.5em;
+}
+
+section#hero .content p {
+    margin: 2em auto;
+}
+
+section#hero .content .btn {
+    padding: 1em 1.3em;
+    background-color: var(--btn-color);
+    border: none;
+    outline: none;
+    color: white;
+}
+
+section#why-us {
+    margin-top: 80vh;
+    /* height: 100vh;
+    border: slateblue solid; */
+}
+
+#why-us {
+    display: flex;
+    justify-content: space-between;
+}
+
+#why-us .features {
+    height: 45vh;
+    width: 30%;
+    /* border: white solid; */
+}
+#why-us .features h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90em;
+    /* text-align: center; */
+    margin-bottom: 1em;
+    color: white;
+    /* word-spacing: 5px; */
+}
+
+
+#why-us .features h2 span{
+    padding-right: 0.75em;
+    color: var(--btn-color);
+}
+
+#gallery {
+    /* border: solid white; */
+    height: 55vh;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gallery #gi1 div.image{
+    height: 46%;
+    display: flex;
+    flex-direction: column;
+    /* border: solid blue; */
+}
+
+#gallery #gi1 div.image:nth-child(1) {
+    margin-bottom: 1.5em;
+}
+
+#gallery #gi1, #gallery #gi2 {
+    width: 25%;
+}
+
+#gallery #gi3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    background-color: rgb(37, 33, 27);
+    padding: 0em 3em;
+    box-sizing: border-box;
+}
+#gallery #gi3 > * {
+    margin: 0.25em auto 0.5em;
+    /* border: solid; */
+    width: 100%;
+    text-align: left;
+}
+
+#gallery #gi3 h4, #popular-products .headings h4  {
+    color: var(--btn-color);
+    font-size: 0.9em;
+    font-family: 'poppins', sans-serif;
+}
+
+#gallery #gi3 h2, #popular-products .headings h2  {
+    color: white;
+    font-size: 2em;
+    font-family: 'poppins', sans-serif;
+}
+
+#gallery #gi3 p {
+    font-size: 0.75em;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+section#popular-products {
+    margin-top: 12.5vh;
+    /* height: 100vh;
+    border: slateblue solid; */
+}
+
+#popular-products {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#popular-products .products {
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+}
+#popular-products .product {
+    height: 45vh;
+    width: 30%;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: rgb(37, 33, 27);
+    /* border: white solid; */
+}
+
+#popular-products .headings {
+    text-align: center;
+    margin-bottom: 1.5em;
+}

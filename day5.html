@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Form</title>
+    
+</head>
+
+<body>
+    <!-- Forms are used to take the input from the user. To create a form in HTML, we use <form> tag. Then we use <label> tag to create a label and <input> tag to create an input field -->
+
+    <form action="day3.html" method="get">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="">Username:</label> <br>
+            <input type="text" name="name" placeholder="Enter username" value="Haaris" readonly>
+            <br>
+
+            <label for="pass_input">Password: </label> <br>
+            <input type="password" name="password" id="pass_input" placeholder="Enter password">
+            <br>
+
+            <label for="">Phone Number:</label> <br>
+            <input type="number" name="phone" id="" placeholder="Enter Phone number" min="0" max="1000"> <br>
+
+            <label for="">Email: </label> <br>
+            <input type="email" name="email" id=""> <br>
+
+            <label for="">Date of Birth: </label> <br>
+            <input type="datetime-local" name="dob" id=""> <br>
+
+            <label for="">Favorite color: </label> <br>
+            <input type="color" name="favcol" id=""> <br>
+        </fieldset>
+
+        <br> <br>
+
+        <fieldset>
+            <legend>Choose One option: </legend>
+            <!-- Radio Buttons.  -->
+            <label for="">Gender: </label> <br>
+            <input type="radio" name="gender" id="" value="male">Male
+            <input type="radio" name="gender" id="" value="female">Female
+            <input type="radio" name="gender" id="" value="others">Cannot specify
+            <br>
+
+            <!-- Chechbox -->
+            <label for="">Language(s): </label> <br>
+            <input type="checkbox" name="" id=""> English
+            <input type="checkbox" name="" id=""> Hindi
+            <input type="checkbox" name="" id=""> Urdu
+            <input type="checkbox" name="" id=""> Punjabi
+            <br>
+
+            <!-- Drop down list -->
+            <label for="">Select Course: </label> <br>
+            <select name="course" id="">
+                <option value="">-- Select Course --</option>
+                <optgroup label="Bachelor courses">
+                    <option value="bba">BBA</option>
+                    <option value="B.Sc IT">B.SC IT</option>
+                    <option value="bca">BCA</option>
+                    <option value="B.Sc IT">B.Comm</option>
+                </optgroup>
+                <optgroup label="Master courses">
+                    <option value="mca">MCA</option>
+                    <option value="mba">MBA</option>
+                    <option value="M.Sc IT">M.SC IT</option>
+                    <option value="M.Comm">M.Comm</option>
+                </optgroup>
+            </select> <br>
+
+            <label for="">Upload Image: </label> <br>
+            <input type="file" name="" id="">
+        </fieldset> <br> <br>
+
+        <fieldset>
+            <legend>Buttons: </legend> 
+            <input type="range" name="range" id="" min="0" max="5"> <br>
+            <input type="reset" value="Reset">    
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <!-- 
+            iFrames, audio and Video YouTube embedding and google map, div, span, id and class
+        -->
+    </form>
+
+</body>
+
+</html>

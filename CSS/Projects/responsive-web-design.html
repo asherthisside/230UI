@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - RWD Project</title>
+    <style>
+/* 
+Colors: 
+#312614
+#B7832F
+#707070
+#FFFFFF
+*/
+        * {
+            --brown: #312614;
+            --chocolate: #B7832F;
+            --grey: #707070;
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 75%;
+            /* border: solid; */
+            margin: auto;
+        }
+
+        .col-1 {
+            width: 23.5%;
+        }
+
+        .col-2 {
+            width: 47%;
+        }
+        .col-3 {
+            width: 70.5%;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            /* border: solid; */
+            margin-top: 2em;
+        }
+
+
+        h1 {
+            text-align: center;
+        }
+
+        h1 span {
+            color: var(--chocolate);
+        }
+
+        p {
+            margin: 0 auto;
+        }
+
+        .dark-bg {
+            background-color: var(--brown);
+            color: white;
+            padding: 1em;
+        }
+
+        @media screen and (max-width: 968px){
+            section {
+                flex-direction: column;
+            }
+
+            section .col-1, section .col-2, section .col-3 {
+                width: 100%;
+            }
+
+            p {
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Let's start getting <span>a little more</span> Fancy !</h1>
+        <img src="../../../UI&Django230Course/back.png" alt="" height="200px" width="100%">
+        <section id="s1">
+            <div class="columns col-1">
+                <h2>Dolor sit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eaque fugit ullam ut distinctio porro at, nulla deserunt asperiores dolorem animi vitae ipsum atque sunt exercitationem ipsam mollitia suscipit culpa cum nemo illo nobis maxime in. Fugit soluta quis architecto odit, consectetur maiores qui dicta vel ut quia placeat earum praesentium optio aliquid hic doloremque eaque! Fuga, accusantium. Eum asperiores amet a.</p>
+            </div>
+            <div class="columns col-2">
+                <h2>consectetur adipisicing</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet repudiandae maiores aliquam quasi rem neque veniam? Facere tempora, modi possimus corporis quos excepturi. Dolores soluta enim voluptates, porro illum ducimus maiores adipisci qui nihil laudantium repudiandae, minus dolorum eius cumque deleniti quisquam ipsum hic commodi fugit veniam corporis amet voluptatibus dolorem. Nihil voluptatibus, inventore aut, eos deserunt dolorem amet ad dolor beatae commodi, modi quis? Ipsam, veritatis cumque sed perferendis nobis accusantium optio soluta cum aspernatur excepturi earum amet, quisquam vero tenetur qui sequi quos animi ex? Odit aliquid veniam mollitia possimus voluptatem impedit, sapiente distinctio dicta iusto, architecto quasi quod! Architecto veniam impedit, pariatur porro voluptatum est aspernatur. Amet incidunt molestias nihil, vel facere quos consectetur porro corporis aperiam.</p>
+            </div>
+            <div class="columns col-1 dark-bg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus officiis reprehenderit nulla, totam architecto dolore? Natus sequi debitis quos molestiae modi eligendi eveniet quidem blanditiis alias, reiciendis corrupti itaque, qui sapiente excepturi vitae pariatur repellendus laboriosam dolorum cupiditate. Blanditiis beatae dignissimos, iure vel, veritatis in autem corporis doloremque dolor maxime.</p>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="columns col-3">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sunt cupiditate dolorem quibusdam ab libero voluptatum ad perferendis quasi, deleniti voluptas nobis itaque id soluta doloremque voluptate sint, minus quo ut modi beatae totam nulla reiciendis. Enim, quidem sunt? Dolorem enim cum adipisci, ut voluptate, molestiae eaque, suscipit facere esse numquam pariatur error. Dolorum labore eaque nemo facilis sequi minima minus fugiat dignissimos sunt? Itaque excepturi tempore quaerat at officiis.</p>  
+            </div>
+            <div class="columns col-1 dark-bg">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, dolor iure dignissimos perspiciatis officiis illo assumenda. Maxime magnam quisquam perspiciatis.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

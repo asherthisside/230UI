@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Links animation</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top right, linen, limegreen);
+        }
+
+        .picture {
+            height: 50%;
+            width: 35%;
+            /* border: 5px solid red; */
+            position: relative;
+        }
+
+        .icon {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+            width: 35px;
+            background-color: yellow;
+            border-radius: 50%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            opacity: 0;
+            transition: 0.5s;
+        }
+
+        #icon1 {
+            top: 10px;
+            left: 10px;
+        }
+        #icon2 {
+            top: 10px;
+            right: 10px;
+        }
+        #icon3 {
+            bottom: 10px;
+            left: 10px;
+        }
+        #icon4 {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .picture:hover .icon {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="picture">
+            <div class="icon" id="icon1">1</div>
+            <div class="icon" id="icon2">2</div>
+            <img src="../../images/old-newspaper-gdfea926e5_640.jpg" alt="" height="100%" width="100%">
+            <div class="icon" id="icon3">3</div>
+            <div class="icon" id="icon4">4</div>
+        </div>
+    </div>
+</body>
+</html>

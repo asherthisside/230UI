@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Display and Position properties</title>
+    <style>
+        a {
+            background-image: linear-gradient(to right, dodgerblue 35%, hotpink);
+            padding: 10px 20px;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            /* display: block;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 10px; */
+        }
+
+        span {
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        #s1 {
+            display: inline;
+            height: 200px;
+            width: 200px;
+        }
+
+        #s2 {
+            display: block;
+            height: 200px;
+            width: 200px;
+        }
+
+        #s3 {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+        }
+
+        .box {
+            background-color: lime;
+            height: calc(100px + 100px);
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        #b1 {
+            box-sizing: content-box;
+            padding: 30px;
+        }
+        
+        #b2 {
+            box-sizing: border-box;
+            padding: 30px;
+        }
+
+        /* calc() function  */
+    </style>
+</head>
+<body>
+    <!-- <h1>The link</h1> -->
+    <!-- <a href="#">Click here</a>
+    <a href="#">Click here</a> -->
+    <!-- Display properties -->
+    <!-- Inline | Block  -->
+    <!-- display: inline-block -->
+    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet laborum quis aliquam culpa illum recusandae excepturi odio, eum corporis delectus iusto quasi dolorum earum esse veritatis accusantium officiis tempora officia tempore distinctio dolorem vel repellat. Ullam nisi doloremque, <span id="s1">Span1</span> doloribus sunt enim veritatis ducimus distinctio dolorum fugiat necessitatibus natus laborum alias quidem ipsum dignissimos ipsam aliquid illo accusamus blanditiis deserunt corporis tempore quibusdam itaque nostrum? Voluptatibus sunt iusto voluptatem vitae reprehenderit labore provident libero veritatis perferendis accusantium. Mollitia error <span id="s2">span2</span> tenetur odit vel maiores consequatur, dolore inventore nisi aperiam, impedit magnam, cupiditate debitis earum in qui pariatur quis ad nemo facilis eos odio illo et. Libero iste cupiditate in accusamus fugiat. Aliquam, repellendus natus quia soluta ipsa architecto, itaque odit commodi mollitia quod ea. Officia mollitia dolorum consequuntur iusto eos recusandae sit minima voluptatibus optio earum molestiae vel dolores, <span id="s3">span 3</span> veniam laborum perspiciatis impedit vero, dolorem molestias quas quasi. Ex dolorem possimus quisquam optio dicta magnam, voluptas unde molestiae mollitia animi maxime quo harum esse nobis quibusdam aperiam pariatur exercitationem porro neque quod alias. Iure veritatis, enim maiores consectetur adipisci eligendi nemo quo at architecto incidunt tempore cumque fugiat nisi, quod magnam, tenetur consequuntur mollitia quasi iste atque. Tenetur natus sint soluta.</p> -->
+
+    <div class="box" id="b1">This is something</div>
+    <div class="box" id="b2">This is something</div>
+</body>
+</html>

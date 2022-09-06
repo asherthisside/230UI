@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 200px;
+            /* width: 200px; */
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        #box1 {
+            float: left;
+            background-color: yellow;
+        }
+
+        #box2 {
+            float: right;
+            background-color: violet;
+        }
+
+        #box3 {
+            clear: both;
+        }
+
+        li {
+            float: left;
+            padding: 20px 35px;
+            list-style: none;
+            background-color: darkorange;
+            border: solid;
+            margin: 5px;
+        }
+
+        .unit-box {
+            height: 400px;
+            width: 600px;
+            background-color: black;
+            width: 100vw;
+            color: white;
+        }
+
+        html {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        span {
+            font-size: 1rem;
+        }
+
+        /* Will 100% always be equal to 100vw ? */
+
+        .outer-box {
+            height: 100px;
+            background-color: yellow;
+            width: 80vw;
+        }
+
+        .inner-box {
+            width: 70vw;
+            height: 50px;
+            background-color: turquoise;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="box" id="box1">Box - 1</div>
+    <div class="box" id="box2">Box - 2</div>
+    <div class="box" id="box3">Box - 3</div> -->
+
+    <!-- <ul>
+        <li>ABc</li>
+        <li>def</li>
+        <li>ghi</li>
+        <li>jkl</li>
+        <li>mno</li>
+    </ul> -->
+
+    <!-- Measuring Units -->
+    <!-- 
+        Relative units - %, em, rem, vh and vw
+        Absolute units - px
+     -->
+
+    <div class="unit-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum, nihil sint sit fugiat, expedita maxime perspiciatis quos iste accusantium voluptas in, blanditiis officia doloribus dolore! Dolorem neque, consectetur itaque aut voluptates maiores ipsum sapiente ipsam. Modi placeat maiores consectetur eaque dolores ipsum doloremque illo tenetur minus hic totam distinctio omnis unde quibusdam porro amet earum quo a dolor illum, dolore iure. Natus aperiam totam voluptas quo accusamus nostrum odit dolorem, facere atque, vero, deleniti repellat alias? Dolorum et in similique corrupti fugiat reiciendis. Laudantium cupiditate iusto facere nobis dolorum repudiandae vel! Eos dicta maxime repudiandae, dolorum sapiente laudantium veniam!
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut iusto nemo incidunt asperiores magnam! <span>This is some text.</span> Corrupti consequuntur, at neque odit porro vel cumque facere dolores, velit in sed reiciendis fuga.</p>
+
+    <!-- em - Depends upon the font-size of parent element. 1 em = 1 times of font-size of parent -->
+    <!-- rem - Depends upon the font-size of root element (i.e. html element). 1 rem = 1 times of font-size of html tag -->
+
+    <!-- vh - Viewport's height - 1 vh = 1% of total height of viewport -->
+    <!-- vw - Viewport's widht - 1 vw = 1% of total width of viewport -->
+
+    <!-- Responsive Web Design -->
+
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+</body>
+</html>

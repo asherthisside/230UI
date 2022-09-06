@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Animations</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: lightseagreen;
+            animation-name: anima;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+
+        @keyframes anima {
+            /* from {
+                background-color: yellow;
+            } */
+            /* to {background-color: red; transform: translate(500px, 200px);} */
+            /* to {
+                background-color: red; 
+                margin-left: 500px;
+                margin-top: 200px;
+            } */
+
+            0% {
+                background-color: blue;
+            }
+
+            25%{
+                background-color: yellow;
+                transform: translateX(400px) scale(1.25) rotateZ(120deg);
+            }
+
+            50%{
+                background-color: red;
+                transform: translate(400px, 400px);
+            }
+            
+            75%{
+                background-color: green;
+                transform: translate(0px, 400px) scale(1.25) rotateZ(120deg);
+            }
+            
+            100%{
+                background-color: blue;
+                transform: translate(0);
+            }
+        }
+
+        .anotherbox {
+            height: 200px;
+            width: 200px;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="anotherbox"></div>
+</body>
+</html>

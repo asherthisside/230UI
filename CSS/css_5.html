@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Position Properties</title>
+
+    <style>
+        .container {
+            width: 100%;
+            height: 300vh;
+            background-color: rgb(172, 243, 18);
+            position: relative;
+        }
+
+        .box {
+            display: inline-block;
+            height: 150px;
+            width: 150px;
+            border: 2px solid;
+            font-size: 22px;
+        }
+
+        #box1 {
+            position: static;
+            top: 20px;
+        }
+        
+        #box2 {
+            position: relative;
+            top: 30px;
+            /* left: 30px; */
+            /* right: 30px; */
+            background-color: yellow;
+        }   
+
+        #box3 {
+            position: absolute;
+            background-color: black;
+            color: red;
+            /* top: 30px; */
+            left: 0px;
+            top: 40%;
+        }
+
+        #box4 {
+            position: fixed;
+            background-color: violet;
+            bottom: 0;
+            right: 0;
+        }
+
+        #box5 {
+            position: sticky;
+            background-color: tomato;
+            margin-top: 50px;
+            top:0
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Position properties - static, relative, absolute, fixed and sticky -->
+    <div class="container">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+        <div class="box" id="box4">Box4</div>
+        <div class="box" id="box5">Box5</div>
+    </div>
+</body>
+</html>

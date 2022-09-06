@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Creation in CSS</title>
+
+    <style>
+        :root {
+            --primary: #FEF9A7;
+            --secondary: #FAC213;
+            --accent: #D61C4E;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--accent);
+        }
+
+        .container {
+            height: 300vh;
+            width: 100%;
+            background: var(--primary);
+        }
+
+        header {
+            padding-top: 0.5em;
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0;
+            /* border-bottom: 2px solid black; */
+            background-color: var(--primary);
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo-image {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid
+        }
+        
+        nav {
+            float: right;
+            /* border: solid; */
+        }
+        
+        li {
+            /* border: solid; */
+            display: inline-block;
+            width: 6em;
+            text-align: center;
+            padding: 0.75em 1em;
+            margin: 0.25em 0.5em;
+            font-size: 1.25em;
+            background-color: var(--secondary);
+            color: var(--accent);
+        }
+
+        aside {
+            padding: 1em;
+            width: 25%;
+            height: calc(100vh - 80px);
+            /* border-right: 2px solid black; */
+            position: fixed;
+            
+        }
+
+        main {
+            padding: 1em;
+            width: 75%;
+            height: calc(300vh - 160px);
+            background-color: var(--secondary);
+            float: right;
+        }
+
+        footer {
+            clear: both;
+            width: 75%;
+            float: right;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="../../images/technology-gd07d896f3_640.jpg" class="logo-image" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Products</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <h1>Side Bar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quia facere beatae culpa eos corporis sed, voluptatem laudantium ratione porro harum quos tempore, provident sint, a quasi explicabo adipisci accusantium? Tenetur praesentium sunt voluptatibus inventore molestiae alias saepe minima. Ab magnam cupiditate sunt animi, expedita eos perspiciatis dolorum. Perferendis numquam commodi, laudantium provident id quo quaerat blanditiis minus repellat amet? Rem alias inventore nihil aperiam maiores ab, quas, consectetur fugiat ullam, veniam voluptates laborum totam! Est minus rem ut consequatur earum quidem harum. Possimus doloremque dignissimos id. Vitae aliquid fugiat delectus molestias, non dolor totam consequatur laborum ipsum deserunt perferendis!</p>
+        </aside>
+
+        <main>
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa accusamus, suscipit eligendi sit quasi quia aliquid odio expedita impedit quam? Porro suscipit assumenda rerum culpa. Rerum placeat, odio cumque commodi, velit ad eum natus exercitationem impedit sint accusantium! Veritatis molestiae, aut, consequuntur harum explicabo, quaerat at beatae porro fuga necessitatibus ab nemo a assumenda. Rerum voluptatibus fugit soluta molestiae, numquam ratione unde cupiditate iste harum? Assumenda sunt dolore ullam ipsum quia quos blanditiis, nostrum explicabo magnam, soluta delectus odio tempora? Deserunt beatae temporibus quas alias aliquid ullam, debitis consectetur sequi, consequatur accusantium ratione, itaque perspiciatis nihil dolorum omnis exercitationem vitae neque minima quia quisquam optio in. Id aliquid magnam, odit quo dolorum nemo. Impedit maiores explicabo dolore eligendi ipsum soluta, sequi quam nam fuga molestias necessitatibus sit, sint ex ab quia, officia repudiandae repellat. Praesentium et modi perferendis, perspiciatis dignissimos magni at molestiae. Deserunt, necessitatibus nam enim tempore adipisci voluptate? Ea amet, eaque tenetur magnam qui perferendis. Dolores odio porro provident nihil, excepturi similique corporis quia laborum at facilis molestias nobis harum necessitatibus voluptatibus? Earum praesentium accusamus a corporis aliquam error consequatur iusto cumque veritatis maxime blanditiis dicta, quidem qui explicabo provident, exercitationem, itaque eveniet vel aspernatur eius. Minima.</p>
+
+            <br> <br> <br>
+
+            <h2>Section 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, impedit aliquam. Modi sed, est error libero deserunt in ipsum, distinctio quia explicabo id esse sit temporibus consectetur necessitatibus eveniet fuga beatae cupiditate neque repudiandae cum corrupti mollitia quidem autem. Accusantium maxime totam laudantium aperiam voluptates fuga, eum impedit odit harum dolores recusandae beatae iure ex illo suscipit at nulla sit! Dolorum iure in blanditiis ipsa, voluptatibus asperiores consectetur mollitia recusandae, harum enim optio expedita eum. Eius asperiores iure repudiandae rem, cupiditate praesentium, reprehenderit quos dolorum rerum quae quo beatae voluptates veniam ex aspernatur ad dolores adipisci! Dolor id voluptatibus in.</p>
+            
+            <h2>Section 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, impedit aliquam. Modi sed, est error libero deserunt in ipsum, distinctio quia explicabo id esse sit temporibus consectetur necessitatibus eveniet fuga beatae cupiditate neque repudiandae cum corrupti mollitia quidem autem. Accusantium maxime totam laudantium aperiam voluptates fuga, eum impedit odit harum dolores recusandae beatae iure ex illo suscipit at nulla sit! Dolorum iure in blanditiis ipsa, voluptatibus asperiores consectetur mollitia recusandae, harum enim optio expedita eum. Eius asperiores iure repudiandae rem, cupiditate praesentium, reprehenderit quos dolorum rerum quae quo beatae voluptates veniam ex aspernatur ad dolores adipisci! Dolor id voluptatibus in.</p>
+        
+            <img src="../../images/technology-gd07d896f3_640.jpg" alt="" width="300px">
+            <img src="../../images/psychology-g5b27ec9db_640.jpg" alt="" width="500px">
+            <img src="../../images/old-newspaper-gdfea926e5_640.jpg" alt="">
+        </main>
+
+        <footer>
+            <p>
+                Copyright &copy; <code>www.haarissaifi.com</code> <br>
+                &reg; All right reserved 1998 - 2028
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

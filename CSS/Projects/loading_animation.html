@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading animation using CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            background: linear-gradient(120deg, skyblue, linen);
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        h1 {
+            margin-bottom: 3em;
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 5px;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0px 0px 4px red, 0px 0px 4px red;
+            animation: shadow 1s infinite alternate;
+            /* animation: shadow 1s infinite normal linear; */
+        }
+
+        @keyframes shadow {
+            from{}
+            to{text-shadow: 2px 2px 2px black, 4px 4px 5px white, -4px -4px 5px white, 6px -4px 5px white, -4px 6px 5px white;}
+        }
+
+        /* @keyframes shadow {
+            0%{text-shadow: 4px -4px 5px white;}
+            25%{text-shadow: 4px 4px 5px white;}
+            50%{text-shadow: -4px 4px 5px white;}
+            75%{text-shadow: -4px -4px 5px white;}
+            100%{text-shadow: 4px -4px 5px white;}
+        } */
+
+        .animation-box {
+            height: 25px;
+            width: 25px;
+            background-color: yellow;
+            margin: auto 1em;
+            animation: anima 3s infinite;
+            margin-top: 3em;
+        }
+
+        @keyframes anima {
+            25% {
+                transform: rotateZ(360deg) scale(1.5);
+            }
+
+            50% {
+                transform: rotateZ(360deg) scale(1);
+            }
+
+            75% {
+                transform: rotateZ(360deg) scale(1);
+            }
+
+            100% {
+                transform: rotateZ(360deg) scale(1);
+            }
+        }
+
+        #box2 {
+            animation: anima2 3s infinite;
+        }
+
+        @keyframes anima2 {
+            0% {}
+
+            25% {
+                transform: rotateZ(0) scale(1);
+            }
+
+            50% {
+                transform: rotateZ(360deg) scale(1.5);
+            }
+
+            75% {
+                transform: rotateZ(360deg) scale(1);
+            }
+
+            100% {
+                transform: rotateZ(360deg) scale(1);
+            }
+        }
+
+        #box3 {
+            animation: anima3 3s infinite;
+        }
+
+        @keyframes anima3 {
+            0% {}
+
+            25% {
+                transform: rotateZ(0) scale(1);
+            }
+
+            50% {
+                transform: rotateZ(0) scale(1);
+            }
+
+            75% {
+                transform: rotateZ(360deg) scale(1.5);
+            }
+
+            100% {
+                transform: rotateZ(360deg) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Loading Animation</h1>
+        <div class="animation">
+            <div class="animation-box" id="box1"></div>
+            <div class="animation-box" id="box2"></div>
+            <div class="animation-box" id="box3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

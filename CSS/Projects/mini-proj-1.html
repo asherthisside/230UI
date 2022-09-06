@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Navigation Bar Style</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: lightblue;
+            height: 500px;
+            width: 100%;
+        }
+
+        header {
+            height: 60px;
+            padding: 10px;
+            width: 100%;
+            background-color: navy;
+        }
+
+        nav {
+            height: 100%;
+            width: 60%;
+            background-color: lightpink;
+            margin: auto;
+        }
+
+        li {
+            display: inline-block;
+            /* background-color: navy; */
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px 25px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            border: 2px solid navy;
+            /* transition: background 5s, color 1s; */
+            transition: all .5s;
+        }
+
+        li:hover {
+            background-color: navy;
+            color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Products</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+</body>
+</html>

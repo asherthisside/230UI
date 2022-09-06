@@ -1,0 +1,10 @@
+/* selector {
+    property: value;
+    property: value;
+    property: value;
+} */
+
+#h1 {
+    background-color: yellow;
+    color: red;
+}

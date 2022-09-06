@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nav 1 using flexbox</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: lightblue;
+        }
+
+        header {
+            color: white;
+            height: 80px;
+            width: 100%;
+            background-color: navy;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px 0px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .logo {
+            font-size: 2em;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 0.5em 0.75em;
+        }
+
+        button {
+            padding: 0.5em 0.75em;
+            background-color: rgb(23, 146, 222);
+            border-radius: 1em;
+            border: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">LOGOBAKERY</div>
+            <nav>
+                <ul>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <button>Contact</button>
+        </header>
+    </div>
+</body>
+
+</html>

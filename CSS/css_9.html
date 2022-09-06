@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - More with Pseudo - Classes</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr {
+            background-color: lightblue;
+        }
+
+        tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        tr:first-child {
+            background-color: blue;
+            color: lightblue;
+        }
+
+        tr:hover:not(tr:first-child) {
+            background-color: #999;
+        }
+
+        .container > :not(.abc){
+            /* background-color: lightgray; */
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="abc">
+            <h1>My Introduction</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque vero adipisci aliquid reiciendis
+                voluptatem quis excepturi eligendi architecto sint voluptate dicta aspernatur eius est, animi earum
+                voluptates dignissimos labore corrupti.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolores praesentium dolor doloremque. Eius
+            placeat exercitationem tempora quos voluptas corporis perspiciatis ab adipisci sapiente, neque repudiandae,
+            praesentium cupiditate minima debitis commodi sunt quibusdam ullam vel facere! Asperiores itaque fuga libero
+            unde cupiditate animi, voluptatum consectetur. Incidunt, veritatis. Cupiditate, assumenda? Mollitia beatae
+            error praesentium, doloribus animi nesciunt nisi laudantium perspiciatis quia hic iure. Mollitia dolorem
+            quidem animi, sequi vero dolor consectetur numquam accusamus rerum voluptatum aliquam repellendus! Eos fugit
+            voluptatibus nihil, a neque id molestias quibusdam veniam dolores dolorem deleniti cum, asperiores autem aut
+            numquam quas temporibus vel! Voluptatum, perferendis consequatur totam itaque nostrum nesciunt sequi.
+            Commodi non quos saepe ipsa id earum eius sapiente sunt cum pariatur magni harum iusto repellendus aliquid,
+            omnis qui dolorum error, officia voluptatibus. Repudiandae aliquid ut atque ratione? Asperiores molestias
+            numquam eos mollitia accusamus maxime deleniti iure ullam facilis, eligendi necessitatibus. Magni commodi
+            quos minus. Minus dicta nisi labore nobis quasi debitis magnam, totam repellat inventore doloribus mollitia,
+            laboriosam recusandae iure odio fuga facilis quam quos, suscipit earum delectus dolor voluptatum. Dicta
+            nostrum nemo magnam hic facere eum velit? Quis magni animi, eum repellat ut quibusdam laboriosam pariatur
+            tenetur, illo veritatis, sunt cumque possimus inventore.</p>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Roll Number</th>
+                <th>Address</th>
+            </tr>
+
+            <tr>
+                <td>Adarsh</td>
+                <td>12</td>
+                <td>01</td>
+                <td>Noida</td>
+            </tr>
+
+            <tr>
+                <td>Akash</td>
+                <td>12</td>
+                <td>02</td>
+                <td>Noida</td>
+            </tr>
+
+            <tr>
+                <td>Akarsh</td>
+                <td>12</td>
+                <td>03</td>
+                <td>Noida</td>
+            </tr>
+
+            <tr>
+                <td>Bablu</td>
+                <td>12</td>
+                <td>04</td>
+                <td>Noida</td>
+            </tr>
+
+            <tr>
+                <td>Chandu</td>
+                <td>12</td>
+                <td>05</td>
+                <td>Noida</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

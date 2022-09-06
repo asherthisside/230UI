@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover {
+            text-decoration:underline black wavy ;
+        }
+
+        a {
+            padding: 10px 18px;
+            border: solid;
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:link {
+            font-size: 30px;
+            background-color: lightgreen;
+        }
+
+        a:hover {
+            background-color: black;
+            color: lightgreen;
+        }
+
+        a:active {
+            background-color: red;
+            color: blue;
+        }
+
+        a:visited {
+            background-color: yellow;
+            color: black;
+        }
+
+        ul {
+            background-color: rgb(243, 181, 181);
+            list-style-type: lower-roman;  
+            /* list-style-image: url('../images/wheat.jpg');   */
+            /* list-style: square; */
+            list-style-position: inside;
+        }
+
+        li {
+            background-color: yellow;
+            margin: 10px auto;
+        }
+
+        li:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+
+
+        li:first-child {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        li:first-of-type {
+            background-color: teal;
+            color: whitesmoke;
+        }
+
+        input:focus {
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Pseudo-classes -->
+    <h1>My Introduction</h1>
+    <a href="css_4.html">Click here</a>
+    <a href="css_3.html">Click here</a>
+
+    <!-- List styles -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <input type="text" name="" id="" placeholder="Enter Name">
+    <br> <br>
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown Coffee Shop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <a href="#header">
+            <div id="back-to-top">
+                <i class="fa-solid fa-arrow-up-long"></i>
+            </div>
+        </a>
+        <!-- header start -->
+        <nav id="header">
+            <div class="nav-links left-links" id="link-group-1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#content">About</a></li>
+                    <li><a href="#why-us">Menu</a></li>
+                    <li><a href="#menu">Reservation</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="" width="90%">
+            </div>
+            <div class="nav-links right-links" id="link-group-2">
+                <ul>
+                    <li><a href="#testimonials">Blogs</a></li>
+                    <li><a href="#machine">Contact</a></li>
+                    <li><a href="#popular-products"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="header-mobile">
+            <div class="nav-links left-links" id="link-group-1">
+                <ul>
+                    <div class="menu-icon" onclick="hide()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#content">About</a></li>
+                    <li><a href="#why-us">Menu</a></li>
+                    <li><a href="#menu">Reservation</a></li>
+                </ul>
+            </div>
+            <div class="nav-links right-links" id="link-group-2">
+                <ul>
+                    <li><a href="#testimonials">Blogs</a></li>
+                    <li><a href="#machine">Contact</a></li>
+                    <li><a href="#popular-products"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" onclick="show()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- header end -->
+
+        <!-- hero section start -->
+
+        <section id="hero">
+            <div class="content">
+                <h1>Enjoy Your Morning Coffee</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis fugit, molestias aperiam
+                    natus, inventore enim excepturi!</p>
+                <button class="cta-button">TASTE COFFEE</button>
+            </div>
+        </section>
+
+        <!-- hero section end -->
+
+        <!-- Why Us Section  -->
+
+        <section id="why-us">
+            <div class="features" id="feature1">
+                <h2><span>01.</span> <br> Exquisite Coffee Flavours</h2>
+                <img src="images/f-1.jpeg" alt="" class="feat">
+                <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni laborum
+                    pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae
+                    deserunt! Accusamus, perspiciatis esse.</div>
+            </div>
+            <div class="features" id="feature2">
+                <h2><span>02.</span> <br> Lose yourself here .. </h2>
+                <img src="images/f-2.jpeg" alt="" class="feat">
+                <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni laborum
+                    pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae
+                    deserunt! Accusamus, perspiciatis esse.</div>
+            </div>
+            <div class="features" id="feature3">
+                <h2><span>03.</span> <br> Properly Roasted Beans</h2>
+                <img src="images/f-3.jpeg" alt="" class="feat">
+                <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni laborum
+                    pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae
+                    deserunt! Accusamus, perspiciatis esse.</div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <div class="gallery-image" id="gi1">
+                <div class="image">
+                    <img src="images/f-2.jpeg" alt="" class="rounded-image">
+                </div>
+                <div class="image">
+                    <img src="images/f-2.jpeg" alt="" class="rounded-image">
+                </div>
+            </div>
+            <div class="gallery-image" id="gi2">
+                <img src="images/f-2.jpeg" alt="" class="rounded-image">
+            </div>
+            <div class="gallery-image shadow-box" id="gi3">
+                <h4>Our History</h4>
+                <h2>Create a new Story with Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis asperiores vel expedita nihil,
+                    atque dignissimos praesentium. Temporibus sint aut distinctio! Numquam cum, amet iure iusto qui
+                    atque animi nobis, soluta voluptas ipsam odio, voluptates repellendus? Illo totam, dolor corporis
+                    tenetur ipsa vel ad odio beatae. Velit laborum.</p>
+            </div>
+        </section>
+
+
+        <!-- Popular Products start -->
+
+        <section id="popular-products">
+            <div class="headings">
+                <h4>Popular products</h4>
+                <h2>Coffee popular Products</h2>
+            </div>
+            <div class="products">
+                <div class="product shadow-box" id="product1">
+                    <img src="images/pp-2.png" alt="" class="feat">
+                    <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i></span></h5>
+                    <h2>BRAZIL COFFEE GRED</h2>
+                    <h4>Price - <span>$320.00</span>/$358</h4>
+                    <div class="btn">
+                        <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                            cart</button>
+                    </div>
+
+                    <div class="product-mobile-layout">
+                        <div class="product-image">
+                            <img src="images/pp-2.png" alt="" class="feat">
+                        </div>
+                        <div class="product-details">
+                            <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i></span></h5>
+                            <h2>BRAZIL COFFEE GRED</h2>
+                            <h4>Price - <span>$320.00</span>/$358</h4>
+                            <div class="btn">
+                                <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product shadow-box" id="product2">
+                    <img src="images/pp-2.png" alt="" class="feat">
+                    <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i></span></h5>
+                    <h2>BRAZIL COFFEE GRED</h2>
+                    <h4>Price - <span>$320.00</span>/$358</h4>
+                    <div class="btn">
+                        <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                            cart</button>
+                    </div>
+
+                    <div class="product-mobile-layout">
+                        <div class="product-image">
+                            <img src="images/pp-2.png" alt="" class="feat">
+                        </div>
+                        <div class="product-details">
+                            <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i></span></h5>
+                            <h2>BRAZIL COFFEE GRED</h2>
+                            <h4>Price - <span>$320.00</span>/$358</h4>
+                            <div class="btn">
+                                <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product shadow-box " id="product3">
+                    <img src="images/pp-2.png" alt="" class="feat">
+                    <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star-half"></i></span></h5>
+                    <h2>BRAZIL COFFEE GRED</h2>
+                    <h4>Price - <span>$320.00</span>/$358</h4>
+                    <div class="btn">
+                        <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                            cart</button>
+                    </div>
+
+                    <div class="product-mobile-layout">
+                        <div class="product-image">
+                            <img src="images/pp-2.png" alt="" class="feat">
+                        </div>
+                        <div class="product-details">
+                            <h5>Coffee<span><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half"></i></span></h5>
+                            <h2>BRAZIL COFFEE GRED</h2>
+                            <h4>Price - <span>$320.00</span>/$358</h4>
+                            <div class="btn">
+                                <button class="cta-button"><span><i class="fa-solid fa-bag-shopping"></i></span> Add to
+                                    cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Product -section end--- -->
+
+
+
+
+        <!-- Coffee Machine -->
+
+        <section id="machine" class="shadow-box">
+            <div class="coffee-machine">
+                <img src="images/product-big.png" alt="">
+            </div>
+            <div class="buy-section">
+                <h1>Coffee <br>Machine Buy for home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste praesentium similique consectetur pariatur, voluptas ut
+                    unde dolorum in laborum assumenda!</p>
+                <button class="cta-button">Buy Me</button>
+            </div>
+        </section>
+
+        <section id="machine-mobile-layout">
+            <h1 class="headings">Coffee Machine Buy for home</h1>
+            <img src="../Final Project/images/product-big.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. voluptas ut
+                unde dolorum in laborum assumenda!</p>
+            <button class="cta-button">Buy Me</button>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <div class="headings">
+                <h4>Menu</h4>
+                <h2>Coffee Popular Menu</h2>
+            </div>
+
+            <div class="menu-items">
+                <div class="items" id="item1">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-1.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item2">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-2.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item3">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-3.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item4">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-4.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item5">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-5.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item6">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-6.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item7">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-1.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+                <div class="items" id="item8">
+                    <div class="menu-item-image">
+                        <img src="images/menu-2-2.png" alt="">
+                    </div>
+                    <div class="menu-item-name">Americano Roasted gred</div>
+                    <div class="menu-item-price">Rs. 399</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+
+        <section id="testimonials">
+            <div class="headings">
+                <h4>Testimonials</h4>
+                <h2>Say our customers</h2>
+            </div>
+
+            <div class="testimony-container">
+                <div class="testimony-box shadow-box" id="test1">
+                    <img src="images/tm-author.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vel ad sit consectetur! Aut
+                        modi distinctio reprehenderit, recusandae error mollitia nisi minus aspernatur ad veritatis sed,
+                        quia saepe incidunt, nam placeat ullam molestias odit dolorum.</p>
+                    <div class="name">
+                        <div class="tm-author-name">John Smith</div>
+                        <div class="tm-author-designation">Product Designer</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimony-box shadow-box" id="test2">
+                    <img src="images/tm-author.png" alt="">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vel ad sit consectetur! Aut
+                        modi distinctio reprehenderit, recusandae error mollitia nisi minus aspernatur ad veritatis sed,
+                        quia saepe incidunt, nam placeat ullam molestias odit dolorum.</p>
+                    <div class="name">
+                        <div class="tm-author-name">Brett Lee</div>
+                        <div class="tm-author-designation">User Experience Designer</div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimony-slider">
+                <div class="people">
+                    <h4>2/8 People</h4>
+                    <progress value="2" max="8"></progress>
+                </div>
+                <div class="slider">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapping Section -->
+
+        <section id="mapping">
+            <div class="map shadow-box">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14248.49136497635!2d83.3896118!3d26.772353949999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1660121082201!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-section shadow-box">
+                <div class="heading">
+                    <h4>Reservation</h4>
+                    <h2>Booking a table</h2>
+                </div>
+
+                <div class="form">
+                    <input type="text" placeholder="Full Name .. ">
+
+                    <input type="datetime-local" placeholder="12.25.2020 11:00 AM">
+
+                    <input type="text" placeholder="4 Person">
+
+                    <button class="cta-button">Book A Table</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="blogs">
+            <div class="headings">
+                <h4>Testimonial</h4>
+                <h2>Our Latest News</h2>
+            </div>
+
+            <div class="news-section">
+                <div class="latest-news" id="news-1">
+                    <img src="images/f-1.jpeg" alt="" class="news rounded-image">
+                    <h4><span>By: </span>Rasaline <span class="date">23.01.2021</span></h4>
+                    <h2>Ideal Cocktails From Bormen....</h2>
+                    <h4 class="read-more"> Read More--></h4>
+
+                    <!-- <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni laborum pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae deserunt! Accusamus, perspiciatis esse.</div> -->
+
+                </div>
+
+                <div class="latest-news" id="news-2">
+                    <img src="images/f-2.jpeg" alt="" class="news rounded-image">
+                    <h4><span>By: </span>Rasaline <span class="date">23.01.2021</span></h4>
+                    <h2>Ideal Cocktails From Bormen....</h2>
+                    <h4 class="read-more"> Read More--></h4>
+
+                    <!-- <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni aborum pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae deserunt! Accusamus, perspiciatis esse.</div> -->
+
+                </div>
+
+                <div class="latest-news" id="news-3">
+                    <img src="images/f-3.jpeg" alt="" class="news rounded-image">
+                    <h4><span>By: </span>Rasaline <span class="date">23.01.2021</span></h4>
+                    <h2>Ideal Cocktails From Bormen....</h2>
+                    <h4 class="read-more"> Read More --></h4>
+                    <!-- <div class="curtain">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magni laborum pariatur, perspiciatis necessitatibus adipisci aut odio voluptatibus voluptate aliquid beatae deserunt! Accusamus, perspiciatis esse.</div> -->
+                </div>
+            </div>
+        </section>
+
+        <nav id="footer">
+            <div class="logo-2">
+                <img src="images/logo.png" alt="" width="70%">
+            </div>
+            <ul class="ul2">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#content">
+                    <li>Reservation</li>
+                </a>
+                <a href="#why-us">
+                    <li>Menu</li>
+                </a>
+                <a href="#menu">
+                    <li>About</li>
+                </a>
+                <a href="#menu">
+                    <li>Shops</li>
+                </a>
+                <a href="#menu">
+                    <li>Blogs</li>
+                </a>
+
+                <div class="email-section">
+                    <input type="text" placeholder="Enter Your Email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </ul>
+            <div class="mobile-layout">
+                <div class="logo-2">
+                    <img src="images/logo.png" alt="" width="70%">
+                </div>
+                <div class="email-section">
+                    <input type="text" placeholder="Enter Your Email">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <ul class="ul2">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="#content">
+                        <li>Reservation</li>
+                    </a>
+                    <a href="#why-us">
+                        <li>Menu</li>
+                    </a>
+                    <a href="#menu">
+                        <li>About</li>
+                    </a>
+                    <a href="#menu">
+                        <li>Shops</li>
+                    </a>
+                    <a href="#menu">
+                        <li>Blogs</li>
+                    </a>
+
+                    <div class="email-section">
+                        <input type="text" placeholder="Enter Your Email">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        function show() {
+            let hmobile = document.getElementById("header-mobile")
+            let hero = document.getElementById("hero")
+            hmobile.style.transform = "translateY(0)"
+            hero.style.top = "60%"
+        }
+
+        function hide() {
+            let hmobile = document.getElementById("header-mobile")
+            let hero = document.getElementById("hero")
+            hmobile.style.transform = "translateY(-350px)"
+            hero.style.top = "80px"
+            // alert("Closing ... ")
+        }
+    </script>
+</body>
+
+</html>

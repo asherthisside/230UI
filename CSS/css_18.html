@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layouts with CSS</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            /* width: 900px; */
+            background-color: chartreuse;
+            display: grid;
+            grid-template-rows: 80px 80px 1fr 80px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* justify-items: flex-end;
+            align-items: flex-start; */
+            gap: 5px;
+            grid-template-areas: 
+            "head area52 navbar"
+            "head area52 navbar"
+            "head area52 area53"
+            "area51 footersection area53";
+        }
+
+        /* .container > * {
+            height: 50px;
+            width: 200px;
+        } */
+
+        header {
+            background-color: yellow;
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-row-start: 3; */
+            /* grid-row-end: 4; */
+            /* grid-column: 1 / span 3; */
+            grid-area: head;
+        }
+
+        nav {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            background-color: pink;
+            /* grid-column: 1 / span 3; */
+            /* align-self: flex-end;
+            justify-self: flex-start; */
+            grid-area: navbar;
+        }
+
+        section {
+            background-color: green;
+        }
+
+        section#s1 {
+            grid-area: area51;
+        }
+        
+        section#s2 {
+            grid-area: area52;
+        }
+        
+        section#s3 {
+            grid-area: area53;
+        }
+
+        footer {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            background-color: red;
+            /* grid-row: 2 / span 3; */
+            /* grid-column: 3; */
+            /* grid-column: 1 / span 3; */
+            grid-area: footersection;
+        }
+
+        /* section#s1 {
+            grid-row: 4;
+        } */
+
+        /* section#s3 {
+            grid-column: 2;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav> 
+        <section id="s1">1</section>
+        <section id="s2">2</section>
+        <section id="s3">3</section>
+        <footer></footer>
+    </div>
+</body>
+</html>
+</body>
+</html>
+
+<!-- Grid Area -->

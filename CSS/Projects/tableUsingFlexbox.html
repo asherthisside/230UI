@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table design using CSS Flexbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #CCC;
+        }
+
+        .table {
+            height: 60%;
+            width: 70%;
+            background-color: lightskyblue;
+            border-radius: 1em;
+            box-shadow: 1px 1px 2px inset white, 2px 2px 4px gray;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5em auto 1em;
+            padding: 1em 2em;
+            width: 100%;
+            background-color: white;
+            border-radius: 2em;
+            font-size: 1.25em;
+            box-shadow: 2px 2px 3px gray;
+        }
+
+        #row1 {
+            box-shadow: none;
+            background: none;
+            padding: 0.5em 1.5em;
+        }
+
+        #row2 {
+            margin-top: 0;
+        }
+
+        .row span {
+            /* border: 1px solid; */
+            width: 33%;
+        }
+
+        span.update {
+            text-align: center;
+        }
+
+        span.name {
+            /* order: 1; */
+        }
+        
+        span.actions {
+            text-align: right;
+        }
+
+        i {
+            /* border: solid; */
+            text-align: right;
+            position: absolute;
+            top: 2em;
+            right: 1em;
+            /* font-size: 1.25em; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div class="row" id="row1">
+                <span class="name">Name</span>
+                <span class="update">Last updated</span>
+                <span class="actions">Actions</span>
+            </div>
+            <div class="row" id="row2">
+                <span class="name">DSE</span>
+                <span class="update">9th Aug 2021</span>
+                <span class="actions">view</span>
+            </div>
+            <div class="row" id="row3">
+                <span class="name">Contract changes</span>
+                <span class="update">17th Dec 2020</span>
+                <span class="actions">view</span>
+            </div>
+            <div class="row" id="row4">
+                <span class="name">Annual leave</span>
+                <span class="update">23rd Nov 2018</span>
+                <span class="actions">view</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- glassmorphism -> 
+Neumorphism -> -->
